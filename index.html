@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrome Extensions - Ed Goran</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+            background: #0f0f23;
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+            border-bottom: 1px solid #2a2a4a;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: #888;
+            font-size: 1.1rem;
+        }
+
+        .extensions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .extension-card {
+            background: #1a1a2e;
+            border: 1px solid #2a2a4a;
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .extension-card:hover {
+            transform: translateY(-3px);
+            border-color: #4a4a8a;
+        }
+
+        .extension-card h2 {
+            font-size: 1.4rem;
+            color: #ffffff;
+            margin-bottom: 0.75rem;
+        }
+
+        .extension-card p {
+            color: #aaa;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .extension-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .extension-links a {
+            color: #6c8cff;
+            text-decoration: none;
+            font-size: 0.9rem;
+            padding: 0.4rem 0.8rem;
+            border: 1px solid #6c8cff;
+            border-radius: 6px;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .extension-links a:hover {
+            background: #6c8cff;
+            color: #0f0f23;
+        }
+
+        .status-badge {
+            display: inline-block;
+            font-size: 0.75rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .status-published {
+            background: #1a3a2a;
+            color: #4ade80;
+            border: 1px solid #2a5a3a;
+        }
+
+        .status-development {
+            background: #3a3a1a;
+            color: #facc15;
+            border: 1px solid #5a5a2a;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #2a2a4a;
+            color: #666;
+        }
+
+        footer a {
+            color: #6c8cff;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            .extensions-grid {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧩 My Chrome Extensions</h1>
+            <p>A collection of Chrome extensions built by Ed Goran</p>
+        </header>
+
+        <div class="extensions-grid">
+            <div class="extension-card">
+                <span class="status-badge status-published">Published</span>
+                <h2>Levels</h2>
+                <p>A Chrome extension for tracking and managing levels. Helps users keep track of progression across various platforms.</p>
+                <div class="extension-links">
+                    <a href="https://chrome.google.com/webstore/detail/YOUR_EXTENSION_ID" target="_blank">Chrome Web Store</a>
+                    <a href="/privacy/levels.html">Privacy Policy</a>
+                </div>
+            </div>
+
+            <div class="extension-card">
+                <span class="status-badge status-published">Published</span>
+                <h2>Link Grab</h2>
+                <p>Quickly grab and copy links from web pages. A handy utility for collecting and managing URLs efficiently.</p>
+                <div class="extension-links">
+                    <a href="https://chrome.google.com/webstore/detail/YOUR_EXTENSION_ID" target="_blank">Chrome Web Store</a>
+                    <a href="/privacy/link-grab.html">Privacy Policy</a>
+                </div>
+            </div>
+
+            <div class="extension-card">
+                <span class="status-badge status-published">Published</span>
+                <h2>Steam Wishlist Alerts</h2>
+                <p>Get notified when games on your Steam wishlist go on sale. Never miss a deal on the games you've been waiting for.</p>
+                <div class="extension-links">
+                    <a href="https://chrome.google.com/webstore/detail/YOUR_EXTENSION_ID" target="_blank">Chrome Web Store</a>
+                    <a href="/privacy/steam-wishlist-alerts.html">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Ed Goran. <a href="https://github.com/edgoran" target="_blank">GitHub</a></p>
+        </footer>
+    </div>
+</body>
+</html>
